@@ -1,0 +1,136 @@
+{
+  "feature_cols_to_scale": [
+    "vibration_rms",
+    "temperature_motor",
+    "current_phase_avg",
+    "pressure_level",
+    "rpm",
+    "operating_mode",
+    "hours_since_maintenance",
+    "ambient_temp"
+  ],
+  "machine_type_cols": [
+    "machine_type_CNC",
+    "machine_type_Compressor",
+    "machine_type_Pump",
+    "machine_type_Robotic Arm"
+  ],
+  "all_feature_cols": [
+    "vibration_rms",
+    "temperature_motor",
+    "current_phase_avg",
+    "pressure_level",
+    "rpm",
+    "operating_mode",
+    "hours_since_maintenance",
+    "ambient_temp",
+    "machine_type_CNC",
+    "machine_type_Compressor",
+    "machine_type_Pump",
+    "machine_type_Robotic Arm"
+  ],
+  "machine_types": [
+    "CNC",
+    "Compressor",
+    "Pump",
+    "Robotic Arm"
+  ],
+  "operating_mode_order": [
+    "idle",
+    "normal",
+    "peak"
+  ],
+  "failure_type_classes": [
+    "bearing",
+    "electrical",
+    "hydraulic",
+    "motor_overheat",
+    "none"
+  ],
+  "impute_medians": {
+    "CNC": {
+      "vibration_rms": 2.0,
+      "temperature_motor": 53.85,
+      "current_phase_avg": 10.22,
+      "pressure_level": 55.5,
+      "rpm": 2762.6
+    },
+    "Pump": {
+      "vibration_rms": 1.78,
+      "temperature_motor": 50.97,
+      "current_phase_avg": 11.31,
+      "pressure_level": 83.2,
+      "rpm": 1177.8
+    },
+    "Compressor": {
+      "vibration_rms": 2.185,
+      "temperature_motor": 55.58,
+      "current_phase_avg": 13.33,
+      "pressure_level": 97.1,
+      "rpm": 1614.3
+    },
+    "Robotic Arm": {
+      "vibration_rms": 0.93,
+      "temperature_motor": 39.05,
+      "current_phase_avg": 5.31,
+      "pressure_level": 38.7,
+      "rpm": 330.5
+    }
+  },
+  "raw_input_ranges": {
+    "vibration_rms": {
+      "min": 0.35,
+      "max": 10.0,
+      "median": 1.27
+    },
+    "temperature_motor": {
+      "min": 28.0,
+      "max": 95.0,
+      "median": 50.06
+    },
+    "current_phase_avg": {
+      "min": 2.2,
+      "max": 35.0,
+      "median": 6.43
+    },
+    "pressure_level": {
+      "min": 10.1,
+      "max": 206.5,
+      "median": 46.3
+    },
+    "rpm": {
+      "min": 124.1,
+      "max": 4098.8,
+      "median": 856.0
+    },
+    "hours_since_maintenance": {
+      "min": 0.0,
+      "max": 575.63,
+      "median": 121.61
+    },
+    "ambient_temp": {
+      "min": 8.0,
+      "max": 18.0,
+      "median": 13.0
+    }
+  },
+  "metrics": {
+    "failure_within_24h": {
+      "Accuracy": 0.9772204806687566,
+      "Precision": 0.9325681492109039,
+      "Recall": 0.9129213483146067,
+      "F1": 0.9226401703335699
+    },
+    "failure_type": {
+      "Accuracy": 0.9788923719958202,
+      "Precision": 0.956576213810869,
+      "Recall": 0.908048402561451,
+      "F1": 0.9308861008726457
+    },
+    "estimated_repair_cost": {
+      "MAE": 276.9510498046875,
+      "RMSE": 677.2935340382337,
+      "R2": 81.13077878952026
+    }
+  }
+}
