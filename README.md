@@ -6,7 +6,6 @@ A Streamlit web application for predictive maintenance using machine sensor read
 
 **[Open the Deployed Application](https://predictivemaintenanceai.streamlit.app/)**
 
-> Replace `https://predictivemaintenanceai.streamlit.app/` with the URL of the deployed Streamlit application.
 
 ## 📌 Overview
 
